@@ -70,6 +70,7 @@ button{
     padding: 10px 50px;
     font-size: 20px;
     cursor: pointer;
+    outline: none;
 }
 button:hover{
     background: #622d7d;
