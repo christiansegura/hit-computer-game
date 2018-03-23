@@ -5,14 +5,13 @@ var timer;
 var showComputer;
 var score = 0;
 var noMultiClick = true;
+var html = "";
 
 function build(){
-    var html = "<h1>Hit The Computer</h1>";
-
     for(var x =0; x<offices; x++){
         html += "<div class='office'><div class='desk'></div><div class='computer'></div></div>";
     }
-    document.querySelector('.gameboard').innerHTML=html;
+    document.querySelector('.gameboard').innerHTML+=html;
     computers = document.querySelectorAll('.computer');
     for(var x = 0; x<computers.length;x++){
         computers[x].addEventListener('click', hitComputer, false);
@@ -45,3 +44,5 @@ function hitComputer(){
 function start(){
     popup();
 }
+
+document.getElementById('startGame').addEventListener('click', start);

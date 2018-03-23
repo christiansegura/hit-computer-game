@@ -20,13 +20,18 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div>
-            <input type="button" onclick="start()" value="Start Game"/>
-           <div class="score">0</div>
-           <div class="gameboard">
-               
-           </div>
+        
+        <div id="menu">
+            <h1>Hit The Computer</h1>
+            <button id="startGame">Start Game</button>
         </div>
+
+        <div id="game">
+            <div class="scoreContainer">Hits: <span class="score">0</span></div>
+            <div class="gameboard"></div>
+        </div>
+       
+
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
