@@ -1,0 +1,1 @@
+function build(){for(var i="<h1>Hit The Computer</h1>",d=0;d<6;d++)i+="<div class='office'><div class='desk'></div><div class='computer'></div></div>"}window.onload=build;
